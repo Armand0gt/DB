@@ -1,0 +1,811 @@
+
+
+
+Screens:
+  scrDATA:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 1)
+      LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+    Children:
+      - cntPrincipalSalidas_2:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            Fill: =RGBA(233, 243, 247, 1)
+            Height: =Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Horizontal
+            LayoutGap: =8
+            PaddingBottom: =15
+            PaddingLeft: =15
+            PaddingRight: =15
+            PaddingTop: =15
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =Parent.Width
+          Children:
+            - cntMenuSalidas_2:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  DropShadow: =DropShadow.None
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FillPortions: =0
+                  Height: =Parent.Height
+                  LayoutAlignItems: =LayoutAlignItems.Center
+                  LayoutDirection: =LayoutDirection.Vertical
+                  LayoutGap: =8
+                  LayoutMaxHeight: =0
+                  LayoutMaxWidth: =0
+                  LayoutMinHeight: =16
+                  LayoutMinWidth: =2
+                  PaddingBottom: =16
+                  PaddingLeft: =16
+                  PaddingRight: =16
+                  RadiusBottomLeft: =10
+                  RadiusBottomRight: =10
+                  RadiusTopLeft: =10
+                  RadiusTopRight: =10
+                  Width: =70
+                Children:
+                  - cmpSalidas_2:
+                      Control: CanvasComponent
+                      ComponentName: cmpMenu
+                      Properties:
+                        Expandir_Menu: =false
+                        Fill: =
+                        Height: =768
+                        Width: =60
+            - cntSecundSalidas_2:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 0)
+                  DropShadow: =DropShadow.None
+                  LayoutAlignItems: =LayoutAlignItems.Stretch
+                  LayoutDirection: =LayoutDirection.Vertical
+                  LayoutGap: =15
+                  LayoutMaxHeight: =0
+                  LayoutMaxWidth: =0
+                  LayoutMinHeight: =16
+                  LayoutMinWidth: =16
+                  PaddingBottom: =8
+                  PaddingLeft: =8
+                  PaddingRight: =8
+                  PaddingTop: =8
+                  RadiusBottomLeft: =10
+                  RadiusBottomRight: =10
+                  RadiusTopLeft: =10
+                  RadiusTopRight: =10
+                  Width: =80
+                Children:
+                  - cntEncabezadoSalidas_2:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        DropShadow: =DropShadow.None
+                        Fill: =RGBA(214, 221, 224, 1)
+                        FillPortions: =0
+                        Height: =80
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Horizontal
+                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                        LayoutMaxHeight: =0
+                        LayoutMaxWidth: =0
+                        LayoutMinHeight: =16
+                        LayoutMinWidth: =16
+                        PaddingBottom: =8
+                        PaddingLeft: =64
+                        PaddingRight: =8
+                        PaddingTop: =8
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                      Children:
+                        - IcnBuscar_2:
+                            Control: Classic/Icon@2.5.0
+                            Properties:
+                              BorderColor: =RGBA(0, 0, 0, 0)
+                              Color: =RGBA(180, 214, 250, 1)
+                              DisabledBorderColor: =RGBA(245, 245, 245, 1)
+                              DisabledColor: =RGBA(225, 223, 221, 1)
+                              DisabledFill: =RGBA(0, 0, 0, 0)
+                              FocusedBorderThickness: =4
+                              Height: =45
+                              HoverBorderColor: =RGBA(0, 0, 0, 0)
+                              HoverColor: =RGBA(16, 110, 190, 1)
+                              HoverFill: =RGBA(0, 0, 0, 0)
+                              Icon: =Icon.Search
+                              LayoutMaxHeight: =0
+                              LayoutMaxWidth: =0
+                              LayoutMinHeight: =16
+                              LayoutMinWidth: =16
+                              PaddingLeft: =10
+                              PaddingRight: =5
+                              PressedBorderColor: =RGBA(0, 0, 0, 0)
+                              PressedColor: =RGBA(16, 110, 190, 1)
+                              PressedFill: =RGBA(0, 0, 0, 0)
+                              Width: =45
+                              X: =40
+                              Y: =40
+                        - LblTitulo_1:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 0)
+                              BorderStyle: =BorderStyle.None
+                              BorderThickness: =2
+                              Color: =RGBA(50, 49, 48, 1)
+                              DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                              DisabledColor: =RGBA(161, 159, 157, 1)
+                              FocusedBorderThickness: =4
+                              Font: =Font.Lato
+                              FontWeight: =FontWeight.Bold
+                              LayoutMaxHeight: =0
+                              LayoutMaxWidth: =0
+                              LayoutMinHeight: =16
+                              LayoutMinWidth: =16
+                              Text: ="Busque y selecciones los productos o materiales que necesita"
+                              Width: =650
+                              X: =40
+                              Y: =40
+                        - TextInputBuscardata:
+                            Control: TextInput@0.0.54
+                            Properties:
+                              Align: =Align.Right
+                              AlignInContainer: =AlignInContainer.Center
+                              LayoutMaxHeight: =0
+                              LayoutMaxWidth: =0
+                              LayoutMinHeight: =16
+                              LayoutMinWidth: =16
+                              Width: =450
+                  - cntDataSalidas_2:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        DropShadow: =DropShadow.None
+                        Fill: =RGBA(255, 255, 255, 1)
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMaxHeight: =0
+                        LayoutMaxWidth: =0
+                        LayoutMinHeight: =16
+                        LayoutMinWidth: =16
+                        PaddingBottom: =8
+                        PaddingLeft: =8
+                        PaddingRight: =8
+                        PaddingTop: =8
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                      Children:
+                        - Container13_1:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              FillPortions: =0
+                              Height: =60
+                              LayoutAlignItems: =LayoutAlignItems.Center
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutMaxHeight: =0
+                              LayoutMaxWidth: =0
+                              LayoutMinHeight: =16
+                              LayoutMinWidth: =16
+                            Children:
+                              - Container14_1:
+                                  Control: GroupContainer@1.3.0
+                                  Variant: AutoLayout
+                                  Properties:
+                                    DropShadow: =DropShadow.None
+                                    Fill: =RGBA(0, 81, 100, 1)
+                                    LayoutAlignItems: =LayoutAlignItems.Center
+                                    LayoutDirection: =LayoutDirection.Horizontal
+                                    LayoutMaxHeight: =0
+                                    LayoutMaxWidth: =0
+                                    LayoutMinHeight: =50
+                                    PaddingBottom: =10
+                                    PaddingLeft: =10
+                                    PaddingRight: =10
+                                    PaddingTop: =10
+                                  Children:
+                                    - TextCanvas3_5:
+                                        Control: Text@0.0.51
+                                        Properties:
+                                          Align: ='TextCanvas.Align'.Center
+                                          AlignInContainer: =AlignInContainer.Stretch
+                                          FillPortions: =1
+                                          Font: =Font.Arial
+                                          FontColor: =RGBA(255, 255, 255, 1)
+                                          LayoutMaxHeight: =0
+                                          LayoutMaxWidth: =0
+                                          LayoutMinWidth: =16
+                                          Size: =12
+                                          Text: ="AREA"
+                                          VerticalAlign: =VerticalAlign.Middle
+                                          Weight: ='TextCanvas.Weight'.Bold
+                                          Width: =250
+                                    - TextCanvas3_6:
+                                        Control: Text@0.0.51
+                                        Properties:
+                                          Align: ='TextCanvas.Align'.Center
+                                          AlignInContainer: =AlignInContainer.Stretch
+                                          FillPortions: =1
+                                          Font: =Font.Arial
+                                          FontColor: =RGBA(255, 255, 255, 1)
+                                          LayoutMaxHeight: =0
+                                          LayoutMaxWidth: =0
+                                          LayoutMinHeight: =16
+                                          LayoutMinWidth: =16
+                                          Size: =12
+                                          Text: ="INSTALACION"
+                                          VerticalAlign: =VerticalAlign.Middle
+                                          Weight: ='TextCanvas.Weight'.Bold
+                                          Width: =250
+                                    - TextCanvas3_7:
+                                        Control: Text@0.0.51
+                                        Properties:
+                                          Align: ='TextCanvas.Align'.Center
+                                          AlignInContainer: =AlignInContainer.Stretch
+                                          FillPortions: =1
+                                          Font: =Font.Arial
+                                          FontColor: =RGBA(255, 255, 255, 1)
+                                          LayoutMaxHeight: =0
+                                          LayoutMaxWidth: =0
+                                          LayoutMinHeight: =16
+                                          LayoutMinWidth: =32
+                                          Size: =12
+                                          Text: ="VIDA UTIL"
+                                          VerticalAlign: =VerticalAlign.Middle
+                                          Weight: ='TextCanvas.Weight'.Bold
+                                          Width: =250
+                                    - TextCanvas3_8:
+                                        Control: Text@0.0.51
+                                        Properties:
+                                          Align: ='TextCanvas.Align'.Center
+                                          AlignInContainer: =AlignInContainer.Stretch
+                                          FillPortions: =1
+                                          Font: =Font.Arial
+                                          FontColor: =RGBA(255, 255, 255, 1)
+                                          LayoutMaxHeight: =0
+                                          LayoutMaxWidth: =0
+                                          LayoutMinHeight: =16
+                                          LayoutMinWidth: =32
+                                          Size: =12
+                                          Text: ="CAMBIO"
+                                          VerticalAlign: =VerticalAlign.Middle
+                                          Weight: ='TextCanvas.Weight'.Bold
+                                          Width: =250
+                                    - TextCanvas3_9:
+                                        Control: Text@0.0.51
+                                        Properties:
+                                          Align: ='TextCanvas.Align'.Center
+                                          AlignInContainer: =AlignInContainer.Stretch
+                                          FillPortions: =1
+                                          Font: =Font.Arial
+                                          FontColor: =RGBA(255, 255, 255, 1)
+                                          LayoutMaxHeight: =0
+                                          LayoutMaxWidth: =0
+                                          LayoutMinHeight: =16
+                                          LayoutMinWidth: =32
+                                          Size: =12
+                                          Text: ="DIAS RESTANTES"
+                                          VerticalAlign: =VerticalAlign.Middle
+                                          Weight: ='TextCanvas.Weight'.Bold
+                                          Width: =250
+                                    - TextCanvas3_10:
+                                        Control: Text@0.0.51
+                                        Properties:
+                                          Align: ='TextCanvas.Align'.Center
+                                          AlignInContainer: =AlignInContainer.Stretch
+                                          FillPortions: =1
+                                          Font: =Font.Arial
+                                          FontColor: =RGBA(255, 255, 255, 1)
+                                          LayoutMaxHeight: =0
+                                          LayoutMaxWidth: =0
+                                          LayoutMinHeight: =16
+                                          LayoutMinWidth: =32
+                                          Size: =12
+                                          Text: ="ESTADO"
+                                          VerticalAlign: =VerticalAlign.Middle
+                                          Weight: ='TextCanvas.Weight'.Bold
+                                          Width: =250
+                                    - TextCanvas3_11:
+                                        Control: Text@0.0.51
+                                        Properties:
+                                          Align: ='TextCanvas.Align'.Center
+                                          AlignInContainer: =AlignInContainer.Stretch
+                                          FillPortions: =1
+                                          Font: =Font.Arial
+                                          FontColor: =RGBA(255, 255, 255, 1)
+                                          LayoutMaxHeight: =0
+                                          LayoutMaxWidth: =0
+                                          LayoutMinHeight: =16
+                                          LayoutMinWidth: =32
+                                          Size: =12
+                                          Text: ="USO"
+                                          VerticalAlign: =VerticalAlign.Middle
+                                          Weight: ='TextCanvas.Weight'.Bold
+                                          Width: =250
+                                    - TextCanvas3_12:
+                                        Control: Text@0.0.51
+                                        Properties:
+                                          Align: ='TextCanvas.Align'.Center
+                                          AlignInContainer: =AlignInContainer.Stretch
+                                          FillPortions: =1
+                                          Font: =Font.Arial
+                                          FontColor: =RGBA(255, 255, 255, 1)
+                                          LayoutMaxHeight: =0
+                                          LayoutMaxWidth: =0
+                                          LayoutMinHeight: =16
+                                          LayoutMinWidth: =32
+                                          Size: =12
+                                          Text: ="CATEGORIA"
+                                          VerticalAlign: =VerticalAlign.Middle
+                                          Weight: ='TextCanvas.Weight'.Bold
+                                          Width: =250
+                                    - TextCanvas3_13:
+                                        Control: Text@0.0.51
+                                        Properties:
+                                          Align: ='TextCanvas.Align'.Center
+                                          AlignInContainer: =AlignInContainer.Stretch
+                                          FillPortions: =1
+                                          Font: =Font.Arial
+                                          FontColor: =RGBA(255, 255, 255, 1)
+                                          LayoutMaxHeight: =0
+                                          LayoutMaxWidth: =0
+                                          LayoutMinHeight: =16
+                                          LayoutMinWidth: =32
+                                          Size: =12
+                                          Text: ="CASA COMERCIAL"
+                                          VerticalAlign: =VerticalAlign.Middle
+                                          Weight: ='TextCanvas.Weight'.Bold
+                                          Width: =250
+                                    - TextCanvas3_14:
+                                        Control: Text@0.0.51
+                                        Properties:
+                                          Align: ='TextCanvas.Align'.Center
+                                          AlignInContainer: =AlignInContainer.Stretch
+                                          FillPortions: =1
+                                          Font: =Font.Arial
+                                          FontColor: =RGBA(255, 255, 255, 1)
+                                          LayoutMaxHeight: =0
+                                          LayoutMaxWidth: =0
+                                          LayoutMinHeight: =16
+                                          LayoutMinWidth: =32
+                                          Size: =12
+                                          Text: ="DESCRIPCION"
+                                          VerticalAlign: =VerticalAlign.Middle
+                                          Weight: ='TextCanvas.Weight'.Bold
+                                          Width: =250
+                                    - TextCanvas3_15:
+                                        Control: Text@0.0.51
+                                        Properties:
+                                          Align: ='TextCanvas.Align'.Center
+                                          AlignInContainer: =AlignInContainer.Stretch
+                                          FillPortions: =1
+                                          Font: =Font.Arial
+                                          FontColor: =RGBA(255, 255, 255, 1)
+                                          LayoutMaxHeight: =0
+                                          LayoutMaxWidth: =0
+                                          LayoutMinHeight: =16
+                                          LayoutMinWidth: =32
+                                          Size: =12
+                                          Text: ="MEDIDA"
+                                          VerticalAlign: =VerticalAlign.Middle
+                                          Weight: ='TextCanvas.Weight'.Bold
+                                          Width: =250
+                                    - TextCanvas3_16:
+                                        Control: Text@0.0.51
+                                        Properties:
+                                          Align: ='TextCanvas.Align'.Center
+                                          AlignInContainer: =AlignInContainer.Stretch
+                                          FillPortions: =1
+                                          Font: =Font.Arial
+                                          FontColor: =RGBA(255, 255, 255, 1)
+                                          LayoutMaxHeight: =0
+                                          LayoutMaxWidth: =0
+                                          LayoutMinHeight: =16
+                                          LayoutMinWidth: =32
+                                          Size: =12
+                                          Text: ="FT"
+                                          VerticalAlign: =VerticalAlign.Middle
+                                          Weight: ='TextCanvas.Weight'.Bold
+                                          Width: =250
+                              - Container15_1:
+                                  Control: GroupContainer@1.3.0
+                                  Variant: AutoLayout
+                                  Properties:
+                                    Fill: =frColorPrincipal6
+                                    FillPortions: =0
+                                    Height: =3
+                                    LayoutAlignItems: =LayoutAlignItems.Center
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutMaxHeight: =0
+                                    LayoutMaxWidth: =0
+                                    LayoutMinHeight: =10
+                                    PaddingBottom: =8
+                                    PaddingLeft: =8
+                                    PaddingRight: =8
+                                    PaddingTop: =8
+                        - Container16_2:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutMaxHeight: =0
+                              LayoutMaxWidth: =0
+                              LayoutMinHeight: =5
+                              LayoutMinWidth: =5
+                            Children:
+                              - Gallery1:
+                                  Control: Gallery@2.15.0
+                                  Variant: Vertical
+                                  Properties:
+                                    BorderColor: =RGBA(245, 245, 245, 1)
+                                    Height: =Parent.Height
+                                    Items: |-
+                                      =Filter(
+                                          DB,
+                                          IsBlank(TextInputBuscardata.Value) || 
+                                          TextInputBuscardata.Value in DESCRIPCION   // <--- CAMBIA field_3 POR EL NOMBRE QUE ENCONTRASTE
+                                      )
+                                    LayoutMaxHeight: =0
+                                    LayoutMaxWidth: =0
+                                    LayoutMinHeight: =5
+                                    LayoutMinWidth: =16
+                                    OnSelect: "=If(\r\n    // ¿Este ítem ya está en el carrito?\r\n    ThisItem in colCarrito,\r\n    \r\n    // SÍ ESTÁ -> Quítalo (Deseleccionar)\r\n    Remove(colCarrito, ThisItem),\r\n    \r\n    // NO ESTÁ -> Agrégalo (Seleccionar)\r\n    Collect(colCarrito, ThisItem)\r\n)"
+                                    ShowNavigation: =true
+                                    TemplateFill: "=If(\r\n    // Si este ítem está en la lista de seleccionados...\r\n    ThisItem in colCarrito,\r\n    \r\n    // Píntalo de un color evidente (ej: Azul clarito o Verde suave)\r\n    RGBA(200, 230, 255, 1), \r\n    \r\n    // Si NO está seleccionado, déjalo blanco (o el color cebra que tenías antes)\r\n    RGBA(255, 255, 255, 1)  \r\n)"
+                                    TemplatePadding: =0
+                                    TemplateSize: =60
+                                    Width: =Parent.Width
+                                  Children:
+                                    - Container8:
+                                        Control: GroupContainer@1.3.0
+                                        Variant: AutoLayout
+                                        Properties:
+                                          DropShadow: =DropShadow.Semilight
+                                          Height: =Parent.TemplateHeight-10
+                                          LayoutDirection: =LayoutDirection.Horizontal
+                                          LayoutWrap: =true
+                                          Width: =Parent.Width
+                                        Children:
+                                          - Label3_10:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                Align: =Align.Center
+                                                BorderColor: =RGBA(0, 0, 0, 0)
+                                                BorderStyle: =BorderStyle.None
+                                                BorderThickness: =2
+                                                Color: =RGBA(50, 49, 48, 1)
+                                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                                DisabledColor: =RGBA(161, 159, 157, 1)
+                                                FillPortions: =1
+                                                FocusedBorderThickness: =4
+                                                Font: =Font.'Segoe UI'
+                                                LayoutMaxHeight: =0
+                                                LayoutMaxWidth: =0
+                                                LayoutMinHeight: =16
+                                                LayoutMinWidth: =16
+                                                LineHeight: =1
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingRight: =0
+                                                PaddingTop: =0
+                                                Size: =10
+                                                Text: =ThisItem.AREA
+                                          - Label3_11:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                Align: =Align.Center
+                                                BorderColor: =RGBA(0, 0, 0, 0)
+                                                BorderStyle: =BorderStyle.None
+                                                BorderThickness: =2
+                                                Color: =RGBA(50, 49, 48, 1)
+                                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                                DisabledColor: =RGBA(161, 159, 157, 1)
+                                                FillPortions: =1
+                                                FocusedBorderThickness: =4
+                                                Font: =Font.'Segoe UI'
+                                                LayoutMaxHeight: =0
+                                                LayoutMaxWidth: =0
+                                                LayoutMinHeight: =16
+                                                LayoutMinWidth: =16
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingRight: =0
+                                                PaddingTop: =0
+                                                Size: =10
+                                                Text: =ThisItem.INSTALACION
+                                          - Label3_12:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                Align: =Align.Center
+                                                BorderColor: =RGBA(0, 0, 0, 0)
+                                                BorderStyle: =BorderStyle.None
+                                                BorderThickness: =2
+                                                Color: =RGBA(50, 49, 48, 1)
+                                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                                DisabledColor: =RGBA(161, 159, 157, 1)
+                                                FillPortions: =1
+                                                FocusedBorderThickness: =4
+                                                Font: =Font.'Segoe UI'
+                                                LayoutMaxHeight: =0
+                                                LayoutMaxWidth: =0
+                                                LayoutMinHeight: =16
+                                                LayoutMinWidth: =16
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingTop: =0
+                                                Size: =10
+                                                Text: =ThisItem.'VIDA UTIL'
+                                          - Label3_13:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                Align: =Align.Center
+                                                BorderColor: =RGBA(0, 0, 0, 0)
+                                                BorderStyle: =BorderStyle.None
+                                                BorderThickness: =2
+                                                Color: =RGBA(50, 49, 48, 1)
+                                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                                DisabledColor: =RGBA(161, 159, 157, 1)
+                                                FillPortions: =1
+                                                FocusedBorderThickness: =4
+                                                Font: =Font.'Segoe UI'
+                                                LayoutMaxHeight: =0
+                                                LayoutMaxWidth: =0
+                                                LayoutMinHeight: =16
+                                                LayoutMinWidth: =16
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingRight: =0
+                                                PaddingTop: =0
+                                                Size: =10
+                                                Text: =ThisItem.CAMBIO
+                                          - Label3_14:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                Align: =Align.Center
+                                                BorderColor: =RGBA(0, 0, 0, 0)
+                                                BorderStyle: =BorderStyle.None
+                                                BorderThickness: =2
+                                                Color: |-
+                                                  =If(
+                                                      Value(ThisItem.'DIAS RESTANTES') < 0, 
+                                                      Color.Red,          // Si es negativo (Vencido) -> ROJO
+                                                      If(
+                                                          Value(ThisItem.'DIAS RESTANTES') <= 30, 
+                                                          Color.Orange,   // Si faltan 30 días o menos -> NARANJA
+                                                          Color.Black     // Si faltan más de 30 días -> NEGRO
+                                                      )
+                                                  )
+                                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                                DisabledColor: =RGBA(161, 159, 157, 1)
+                                                FillPortions: =1
+                                                FocusedBorderThickness: =4
+                                                Font: =Font.'Segoe UI'
+                                                LayoutMaxHeight: =0
+                                                LayoutMaxWidth: =0
+                                                LayoutMinHeight: =16
+                                                LayoutMinWidth: =16
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingTop: =0
+                                                Size: =10
+                                                Text: =ThisItem.'DIAS RESTANTES'
+                                          - Label3_15:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                Align: =Align.Center
+                                                BorderColor: =RGBA(0, 0, 0, 0)
+                                                BorderStyle: =BorderStyle.None
+                                                BorderThickness: =2
+                                                Color: =
+                                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                                DisabledColor: =RGBA(161, 159, 157, 1)
+                                                Fill: |-
+                                                  =If(
+                                                      ThisItem.ESTADO = "VENCIDO", 
+                                                      Color.Orange,   // Fondo Naranja si venció
+                                                      Color.Green     // Fondo Verde si está vigente
+                                                  )
+                                                FocusedBorderThickness: =4
+                                                Font: =Font.'Segoe UI'
+                                                LayoutMaxHeight: =0
+                                                LayoutMaxWidth: =0
+                                                LayoutMinHeight: =16
+                                                LayoutMinWidth: =16
+                                                Size: =10
+                                                Text: =ThisItem.ESTADO
+                                          - Label3_16:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                Align: =Align.Center
+                                                BorderColor: =RGBA(0, 0, 0, 0)
+                                                BorderStyle: =BorderStyle.None
+                                                BorderThickness: =2
+                                                Color: =RGBA(50, 49, 48, 1)
+                                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                                DisabledColor: =RGBA(161, 159, 157, 1)
+                                                FillPortions: =1
+                                                FocusedBorderThickness: =4
+                                                Font: =Font.'Segoe UI'
+                                                LayoutMaxHeight: =0
+                                                LayoutMaxWidth: =0
+                                                LayoutMinHeight: =16
+                                                LayoutMinWidth: =16
+                                                Size: =10
+                                                Text: =ThisItem.USO
+                                          - Label3_17:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                Align: =Align.Center
+                                                BorderColor: =RGBA(0, 0, 0, 0)
+                                                BorderStyle: =BorderStyle.None
+                                                BorderThickness: =2
+                                                Color: =RGBA(50, 49, 48, 1)
+                                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                                DisabledColor: =RGBA(161, 159, 157, 1)
+                                                FillPortions: =1
+                                                FocusedBorderThickness: =4
+                                                Font: =Font.'Segoe UI'
+                                                LayoutMaxHeight: =0
+                                                LayoutMaxWidth: =0
+                                                LayoutMinHeight: =16
+                                                LayoutMinWidth: =16
+                                                Size: =10
+                                                Text: =ThisItem.CATEGORIA
+                                          - Label3_18:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                Align: =Align.Center
+                                                BorderColor: =RGBA(0, 0, 0, 0)
+                                                BorderStyle: =BorderStyle.None
+                                                BorderThickness: =2
+                                                Color: =RGBA(50, 49, 48, 1)
+                                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                                DisabledColor: =RGBA(161, 159, 157, 1)
+                                                FillPortions: =1
+                                                FocusedBorderThickness: =4
+                                                Font: =Font.'Segoe UI'
+                                                LayoutMaxHeight: =0
+                                                LayoutMaxWidth: =0
+                                                LayoutMinHeight: =16
+                                                LayoutMinWidth: =16
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingRight: =0
+                                                PaddingTop: =0
+                                                Size: =10
+                                                Text: =ThisItem.'CASA COMERCIAL'
+                                          - Label3_19:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                Align: =Align.Center
+                                                BorderColor: =RGBA(0, 0, 0, 0)
+                                                BorderStyle: =BorderStyle.None
+                                                BorderThickness: =2
+                                                Color: =RGBA(50, 49, 48, 1)
+                                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                                DisabledColor: =RGBA(161, 159, 157, 1)
+                                                FillPortions: =1
+                                                FocusedBorderThickness: =4
+                                                Font: =Font.'Segoe UI'
+                                                LayoutMaxHeight: =0
+                                                LayoutMaxWidth: =0
+                                                LayoutMinHeight: =16
+                                                LayoutMinWidth: =16
+                                                Size: =10
+                                                Text: =ThisItem.DESCRIPCION
+                                          - Label3_20:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                Align: =Align.Center
+                                                BorderColor: =RGBA(0, 0, 0, 0)
+                                                BorderStyle: =BorderStyle.None
+                                                BorderThickness: =2
+                                                Color: =RGBA(50, 49, 48, 1)
+                                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                                DisabledColor: =RGBA(161, 159, 157, 1)
+                                                FillPortions: =1
+                                                FocusedBorderThickness: =4
+                                                Font: =Font.'Segoe UI'
+                                                LayoutMaxHeight: =0
+                                                LayoutMaxWidth: =0
+                                                LayoutMinHeight: =16
+                                                LayoutMinWidth: =16
+                                                Size: =10
+                                                Text: =ThisItem.'UNIDAD MEDIDA'
+                                          - Icon1:
+                                              Control: Classic/Icon@2.5.0
+                                              Properties:
+                                                BorderColor: =RGBA(0, 0, 0, 0)
+                                                Color: =RGBA(240, 98, 15, 1)
+                                                DisabledBorderColor: =RGBA(245, 245, 245, 1)
+                                                DisabledColor: =RGBA(225, 223, 221, 1)
+                                                DisabledFill: =RGBA(0, 0, 0, 0)
+                                                FocusedBorderThickness: =4
+                                                Height: =35
+                                                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                                HoverColor: =RGBA(16, 110, 190, 1)
+                                                HoverFill: =RGBA(0, 0, 0, 0)
+                                                Icon: =Icon.Document
+                                                OnSelect: =Launch(First(ThisItem.'Datos adjuntos').AbsoluteUri)
+                                                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                                PressedColor: =RGBA(16, 110, 190, 1)
+                                                PressedFill: =RGBA(0, 0, 0, 0)
+                                                Width: =24
+                                                X: =40
+                                                Y: =40
+                                          - TextCanvas3_17:
+                                              Control: Text@0.0.51
+                                              Properties:
+                                                Align: ='TextCanvas.Align'.Center
+                                                FillPortions: =1
+                                                Font: =Font.Arial
+                                                FontColor: =RGBA(53, 61, 63, 1)
+                                                LayoutMaxHeight: =0
+                                                LayoutMaxWidth: =0
+                                                LayoutMinHeight: =16
+                                                LayoutMinWidth: =32
+                                                Size: =12
+                                                Text: =ThisItem.'UNIDAD MEDIDA'
+                                                VerticalAlign: =VerticalAlign.Middle
+                                                Weight: ='TextCanvas.Weight'.Bold
+                                                Width: =250
+                  - cntBotones_2:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        DropShadow: =DropShadow.None
+                        Fill: =RGBA(214, 221, 224, 1)
+                        FillPortions: =0
+                        Height: =50
+                        LayoutAlignItems: =LayoutAlignItems.End
+                        LayoutDirection: =LayoutDirection.Horizontal
+                        LayoutGap: =10
+                        LayoutJustifyContent: =LayoutJustifyContent.End
+                        LayoutMaxHeight: =0
+                        LayoutMaxWidth: =0
+                        LayoutMinHeight: =16
+                        LayoutMinWidth: =16
+                        PaddingBottom: =8
+                        PaddingLeft: =24
+                        PaddingRight: =24
+                        PaddingTop: =8
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                      Children:
+                        - btnCanceltar_2:
+                            Control: Button@0.0.45
+                            Properties:
+                              Align: =Align.Center
+                              DisplayMode: =If(IsEmpty(colCarrito), DisplayMode.Disabled, DisplayMode.Edit)
+                              Icon: ="Cart"
+                              IconStyle: ='ButtonCanvas.IconStyle'.Outline
+                              LayoutMaxHeight: =0
+                              LayoutMaxWidth: =0
+                              LayoutMinHeight: =16
+                              LayoutMinWidth: =16
+                              OnSelect: =Navigate(scrCarrito, ScreenTransition.Cover)
+                              Text: ="Agregar (" & CountRows(colCarrito) & ")"
+                              Width: =200
+                        - btnNext_2:
+                            Control: Button@0.0.45
+                            Properties:
+                              Align: =Align.Left
+                              LayoutMaxHeight: =0
+                              LayoutMaxWidth: =0
+                              LayoutMinHeight: =16
+                              LayoutMinWidth: =16
+                              Text: ="Next"
+                              Width: =100
